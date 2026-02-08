@@ -18,10 +18,6 @@ interface Task{
     editing?: boolean // solo para control local
 }
 
-interface TodoListProps{
-    tasks: Task[];
-}
-
 
 const TodoList = () => {
 

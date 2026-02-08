@@ -15,12 +15,7 @@ API.interceptors.request.use((config) => {
   return config;
 });
 
-interface Task{
-    id: number
-    name: string
-    completed: boolean
-    editing?: boolean // solo para control local
-}
+
 
 export const getTasks = () => API.get("/tasks");
 export const createTask = (text: string) => API.post("/tasks", { name: text }, {  
